@@ -4,28 +4,41 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   background-color: var(--bodyColor);
+  /* background-color: var(--darkBody); */
+  border: 1px solid black;
 }
 :root {
   --purple1: #b257e0;
   --purple2: #9e43cb;
   --bodyColor: #fdfbfe;
+  /* --bodyColor: #eef5db; */
   --textColor1: #766a7c;
   --textColor2: #a89fad;
   --titleColor: #272329;
+  /* Dark Mode */
+  --darkBody: #092635;
+  --darkFont: #e9e9e9;
+  --darkBack: #1b4242;
 }
 a {
   text-decoration: none;
   color: var(--purple1);
+  /* color: var(--darkFont); */
 }
 a:hover {
   color: var(--purple2);
+  /* color: var(--darkBack); */
 }
 p {
   color: var(--textColor1);
+  /* color: var(--darkFont); */
 }
 h1 {
   color: var(--titleColor);
+  /* color: var(--darkFont); */
 }
+
+/* Navbar Starts */
 header {
   position: sticky;
   top: 0;
@@ -36,7 +49,7 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5% 10%;
+  padding: 1.5% 14%;
 }
 .leftbar {
   font-size: 24px;
@@ -46,24 +59,45 @@ header {
   gap: 45px;
   align-items: center;
 }
+/* Navbar ends */
+
+/* Main section start */
+main {
+  padding: 0% 14%;
+}
 .section1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10% 24% 0% 15%;
+  /* margin: 10% 24% 0% 15%; */
+  height: 90vh;
   gap: 100px;
 }
 .leftPart1 {
   display: flex;
   flex-direction: row;
-  gap: 140px;
+  gap: 180px;
 }
+.links div {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  /* justify-content: center; */
+}
+/* .links div a { */
+/* padding: 2px; */
+/* } */
 .links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
 }
+/* .links:hover { */
+/* transform: scale(1.02); */
+/* color: var(--bodyColor); */
+/* background-color: var(--purple1); */
+/* } */
 .leftPart1About {
   display: flex;
   flex-direction: column;
@@ -76,11 +110,15 @@ header {
 .rightPart1 img {
   height: 280px;
   width: 280px;
+  background-color: var(--purple1);
+  /* background-color: var(--darkBack); */
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 button {
   color: var(--bodyColor);
+  /* color: var(--bodyColor); */
   background-color: var(--purple2);
+  /* background-color: var(--darkBack); */
   border: none;
   height: 50px;
   width: 140px;
