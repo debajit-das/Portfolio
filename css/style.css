@@ -1,0 +1,245 @@
+/* -------------------Universal CSS start----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* background-color: var(--bodyColor); */
+  /* border: 1px solid black; */
+}
+body {
+  background-color: var(--bodyColor);
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* --purple1: #b47eb3;
+  --purple2: #9e43cb; */
+  --bodyColor: #fdfbfe;
+  --textColor1: #766a7c;
+  --textColor2: #a89fad;
+  --titleColor: #272329;
+  --linkColor1: #e45454;
+  --linkColor2: #f04848;
+  /* Dark Mode */
+  /* --bodyColor: #f0f0f0;
+  --textColor1: #001f3f;
+  --titleColor: #001f3f;
+  --textColor2: #333333;
+  --linkColor1: #ffff00;
+  --linkColor2: #d45050; */
+}
+a {
+  text-decoration: none;
+  color: var(--linkColor1);
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--linkColor2);
+}
+p {
+  color: var(--textColor1);
+}
+h1 {
+  color: var(--titleColor);
+}
+/* -------------------Universal CSS end---------------------- */
+
+/* -------------------------- Navbar Starts -------------------------*/
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bodyColor);
+  z-index: 100;
+  box-shadow: 0px -1px 8px gray;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 14%;
+}
+.leftbar {
+  font-size: 24px;
+}
+.rightbar {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+/* ----------------------Navbar ends------------------ */
+
+/*----------------------- Main section start----------------------------- */
+main {
+  padding: 0% 14%;
+}
+/* ------------------------hero section start ----------------------- */
+.section1 {
+  height: 100vh;
+  padding-top: 15vmin;
+}
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftPart1 {
+  display: flex;
+  flex-direction: row;
+  gap: 188px;
+}
+.links a {
+  transition: 0.5s ease-in;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links a:hover {
+  transform: scale(1.4);
+  color: white;
+  border-radius: 50%;
+  background-color: var(--linkColor2);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+.leftPart1About {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.name {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+.rightPart1 img {
+  height: 280px;
+  width: 280px;
+  background-color: var(--linkColor1);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.leftPart1About button {
+  color: var(--bodyColor);
+  background-color: var(--linkColor2);
+  border: none;
+  height: 50px;
+  width: 140px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.leftPart1About button:hover {
+  background-color: var(--linkColor1);
+  cursor: pointer;
+}
+.scrollBar button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  top: 15vmin;
+  left: 34vmin;
+  color: var(--linkColor2);
+  background-color: transparent;
+  transition: 0.2s ease-in;
+}
+.scrollBar button:hover {
+  transform: translateY(0.25rem);
+  color: var(--linkColor2);
+  background-color: transparent;
+}
+
+/* -----------------------hero section end------------------------------- */
+
+/* ------------------------about section2 start------------------------------- */
+.section2 {
+  margin-top: 10vmin;
+  padding-top: 15vmin;
+  text-align: center;
+  height: 100vh;
+}
+.aboutMe {
+  margin-top: 10vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 150px;
+  padding: 0px 9%;
+}
+.aboutMeImg img {
+  height: 50vmin;
+  width: 50vmin;
+  border-radius: 10px;
+}
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutMeText p {
+  text-align: justify;
+}
+.status {
+  display: flex;
+  justify-content: center;
+}
+.cvBtn {
+  color: var(--bodyColor);
+  background-color: var(--linkColor2);
+  border: none;
+  height: 50px;
+  width: 140px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.cvBtn:hover {
+  background-color: var(--linkColor1);
+  cursor: pointer;
+}
+/* -----------------------about section end-------------------------- */
+
+/* -----------------------Skill section start----------------------------- */
+.skillSection {
+  margin-top: 10vmin;
+  padding-top: 15vmin;
+  height: 100vh;
+  text-align: center;
+}
+.skillLogo {
+  margin-top: 10vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.skillLogo div img {
+  height: 40px;
+  width: 40px;
+}
+.skillLogo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 30%;
+  height: 15vmin;
+  border-radius: 5px;
+  background-color: var(--linkColor2);
+  transition: 0.3s ease-in;
+}
+.skillLogo div p {
+  color: var(--bodyColor);
+}
+.skillLogo div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 8px black;
+}

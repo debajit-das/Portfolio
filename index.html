@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Debajit Das</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -16,39 +16,43 @@
     ></script>
   </head>
   <body>
+    <!--------------------------------- HEADER SATRT ---------------------------------->
     <header>
       <div class="navbar">
         <div class="leftbar"><p>Debajit.</p></div>
         <div class="rightbar">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Service</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact Me</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#service">Service</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact Me</a>
           <a href="#"><i class="fa-solid fa-moon"></i></a>
         </div>
       </div>
     </header>
+    <!--------------------------- HEADER ENDS---------------------------------- -->
     <main>
-      <section class="section1">
+      <!-- ----------------------HERO SECITION START -------------------------- -->
+
+      <section class="section1" id="home">
         <div class="heroSection">
           <div class="leftPart1">
             <div class="links">
-              <div>
+              <!-- <div> -->
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
-              <div>
+              <!-- </div> -->
+              <!-- <div> -->
                 <a href="#"><i class="fa-brands fa-github"></i></a>
-              </div>
-              <div>
+              <!-- </div> -->
+              <!-- <div> -->
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              </div>
+              <!-- </div> -->
             </div>
             <div class="leftPart1About">
               <h1 class="name">Hi, I'm Debajit</h1>
               <p class="nameAbout"><b>Fullstack Developer</b></p>
-              <p class="aboutMe">
+              <p class="details">
                 High level experience in web design and development knowledge,
                 producing quality work.
               </p>
@@ -57,7 +61,7 @@
               </button>
             </div>
             <div class="rightPart1">
-              <img src="image/profileImage-1.png" alt="" />
+              <img src="asset/image/profileImage-1.png" alt="" />
             </div>
           </div>
         </div>
@@ -73,12 +77,16 @@
         <!-- </a> -->
         <!-- </div> -->
       </section>
-      <section class="section2">
+
+      <!-- ---------------------hero section end------------------------- -->
+
+      <!------------------------about section start---------------------  -->
+      <section class="section2" id="about">
         <h1>About Me</h1>
         <br />
         <p>My Introduction</p>
         <div class="aboutMe">
-          <div class="aboutMeImg"><img src="image/about.jpg" alt="" /></div>
+          <div class="aboutMeImg"><img src="asset/image/about.jpg" alt="" /></div>
           <div class="aboutMeText">
             <p>
               Web developer, with extensive knowledge and years of experience,
@@ -103,6 +111,53 @@
           </div>
         </div>
       </section>
+
+      <!-- ---------------------about section end--------------------------->
+
+      <!-- ---------------------Skill section start----------------------- -->
+      <section class="skillSection" id="skills">
+        <h1>Skills</h1>
+        <br><p>Technical Skills</p>
+        <div class="skillLogo">
+          <div class="html">
+            <img src="asset/skill-img/html5.png" alt="">
+            <p>HTML</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/css3.png" alt="">
+            <p>CSS</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/javascript.png" alt="">
+            <p>javaScript</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/react.png" alt="">
+            <p>React JS</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/nodejs.png" alt="">
+            <p>Node JS</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/tailwind.png" alt="">
+            <p>Tailwind</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/python.png" alt="">
+            <p>Python</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/git.png" alt="">
+            <p>Git</p>
+          </div>
+          <div class="html">
+            <img src="asset/skill-img/mysql.png" alt="">
+            <p>My Sql</p>
+          </div>
+        </div>
+      </section>
+
     </main>
   </body>
 </html>
