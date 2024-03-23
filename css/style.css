@@ -7,8 +7,16 @@
   /* background-color: var(--bodyColor); */
   /* border: 1px solid black; */
 }
-body {
+/* body {
   background-color: var(--bodyColor);
+} */
+.dark {
+  color: white;
+  background-color: black;
+}
+.light {
+  color: var(--titleColor);
+  background-color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -41,9 +49,9 @@ a:hover {
 p {
   color: var(--textColor1);
 }
-h1 {
+/* h1 {
   color: var(--titleColor);
-}
+} */
 /* -------------------Universal CSS end---------------------- */
 
 /* -------------------------- Navbar Starts -------------------------*/
@@ -67,6 +75,12 @@ header {
   display: flex;
   gap: 45px;
   align-items: center;
+}
+.mode {
+  color: var(--linkColor2);
+}
+.mode:hover {
+  cursor: pointer;
 }
 /* ----------------------Navbar ends------------------ */
 
@@ -157,6 +171,9 @@ main {
   color: var(--linkColor2);
   background-color: transparent;
 }
+/* .scrollDown {
+  color: black;
+} */
 
 /* -----------------------hero section end------------------------------- */
 
