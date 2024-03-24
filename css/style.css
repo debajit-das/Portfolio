@@ -71,12 +71,12 @@ header {
 .leftbar {
   font-size: 24px;
 }
-.rightbar {
+/* .rightbar {
   display: flex;
   gap: 45px;
   justify-content: center;
   align-items: center;
-}
+} */
 .rightbarLinks a {
   text-decoration: none;
   color: var(--linkColor1);
@@ -100,7 +100,7 @@ header {
 .mode:hover {
   cursor: pointer;
 }
-.bar {
+#bar {
   color: var(--linkColor2);
   display: none;
 }

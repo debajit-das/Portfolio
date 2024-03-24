@@ -1,3 +1,4 @@
+// ------------------------------------DARK MODE-----------------------------------------------------
 let body = document.querySelector("body");
 let header = document.querySelector("header");
 let theme = document.querySelector("#theme");
@@ -49,5 +50,19 @@ theme.addEventListener("click", () => {
     currLogo = "lightLogo";
     logo.classList.add("lightLogo");
     logo.classList.remove("darkLogo");
+  }
+});
+
+// -----------------------------------------nevigation menu--------------------------------------
+let bar = document.querySelector("#bar");
+let rightbarLinks = document.querySelector(".rightbarLinks");
+let currDisplay = "block";
+bar.addEventListener("click", () => {
+  if (rightbarLinks.style.display === "flex") {
+    rightbarLinks.style.display = "none";
+    currDisplay = "none";
+  } else {
+    rightbarLinks.style.display = "flex";
+    currDisplay = "flex";
   }
 });

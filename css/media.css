@@ -8,18 +8,24 @@
   .rightbarLinks {
     display: flex;
     flex-direction: column;
-    display: none;
-    position: relative;
-    top: 49vmin;
-    left: -30vmin;
+    justify-content: flex-start;
+    align-items: self-start;
+    gap: 5vmin;
+    padding: 4% 8%;
+    position: absolute;
+    top: 13vmin;
+    left: 0vmin;
     width: 100vw;
     background-color: var(--textColor1);
   }
   /* .moreIcons {
-    position: relative;
+    position: absolute;
     right: 50vmin;
   } */
-  .bar {
+  .darkIcon {
+    display: none;
+  }
+  #bar {
     display: block;
   }
 
