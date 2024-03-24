@@ -7,16 +7,19 @@
   /* background-color: var(--bodyColor); */
   /* border: 1px solid black; */
 }
-/* body {
-  background-color: var(--bodyColor);
-} */
+body {
+  /* background-color: var(--bodyColor); */
+  background-color: #e7e7e7;
+}
 .dark {
   color: white;
-  background-color: black;
+  /* background-color: black; */
+  background-color: #161616;
 }
 .light {
   color: var(--titleColor);
-  background-color: white;
+  /* background-color: white; */
+  background-color: #e7e7e7;
 }
 html {
   scroll-behavior: smooth;
@@ -25,7 +28,7 @@ html {
   /* --purple1: #b47eb3;
   --purple2: #9e43cb; */
   --bodyColor: #fdfbfe;
-  --textColor1: #766a7c;
+  --textColor1: #6d6f70;
   --textColor2: #a89fad;
   --titleColor: #272329;
   --linkColor1: #e45454;
@@ -40,11 +43,6 @@ html {
 }
 a {
   text-decoration: none;
-  color: var(--linkColor1);
-  transition: 0.2s;
-}
-a:hover {
-  color: var(--linkColor2);
 }
 p {
   color: var(--textColor1);
@@ -64,8 +62,10 @@ header {
   box-shadow: 0px -1px 8px gray;
 }
 .navbar {
+  /* width: 100vw; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5% 14%;
 }
 .leftbar {
@@ -74,13 +74,35 @@ header {
 .rightbar {
   display: flex;
   gap: 45px;
+  justify-content: center;
   align-items: center;
+}
+.rightbarLinks a {
+  text-decoration: none;
+  color: var(--linkColor1);
+  transition: 0.2s;
+}
+.rightbarLinks a:hover {
+  color: var(--linkColor2);
+}
+.rightbarLinks {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+.moreIcons {
+  display: flex;
+  gap: 30px;
 }
 .mode {
   color: var(--linkColor2);
 }
 .mode:hover {
   cursor: pointer;
+}
+.bar {
+  color: var(--linkColor2);
+  display: none;
 }
 /* ----------------------Navbar ends------------------ */
 
@@ -90,7 +112,7 @@ main {
 }
 /* ------------------------hero section start ----------------------- */
 .section1 {
-  height: 100vh;
+  height: 80vh;
   padding-top: 15vmin;
 }
 .heroSection {
@@ -102,6 +124,9 @@ main {
   display: flex;
   flex-direction: row;
   gap: 188px;
+}
+.links a {
+  color: var(--linkColor2);
 }
 .links a {
   transition: 0.5s ease-in;
@@ -133,6 +158,9 @@ main {
 .name {
   font-size: 3rem;
   line-height: 1.4;
+}
+.nameAbout {
+  font-size: 22px;
 }
 .rightPart1 img {
   height: 280px;
@@ -177,7 +205,7 @@ main {
 
 /* -----------------------hero section end------------------------------- */
 
-/* ------------------------about section2 start------------------------------- */
+/* ------------------------about section start------------------------------- */
 .section2 {
   margin-top: 10vmin;
   padding-top: 15vmin;
@@ -228,7 +256,7 @@ main {
 .skillSection {
   margin-top: 10vmin;
   padding-top: 15vmin;
-  height: 100vh;
+  height: 125vh;
   text-align: center;
 }
 .skillLogo {
@@ -236,25 +264,38 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .skillLogo div img {
   height: 40px;
   width: 40px;
 }
-.skillLogo div {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  width: 30%;
-  height: 15vmin;
+  width: 23%;
+  height: 10vmin;
   border-radius: 5px;
-  background-color: var(--linkColor2);
+  /* background-color: var(--textColor2); */
+  background-color: #f5f5f5;
+
   transition: 0.3s ease-in;
+  box-shadow: 0px 1px 2px gray;
+}
+.lightLogo {
+  background-color: #f5f5f5;
+  color: var(--titleColor);
+}
+.darkLogo {
+  background-color: #6d6f70;
+  color: #e7e7e7;
 }
 .skillLogo div p {
-  color: var(--bodyColor);
+  /* color: var(--bodyColor); */
+  color: var(--titleColor);
+  font-weight: bolder;
 }
 .skillLogo div:hover {
   transform: scale(1.05);
