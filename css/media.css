@@ -6,7 +6,6 @@
     height: 50px;
   }
   .rightbarLinks {
-    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: flex-start;
