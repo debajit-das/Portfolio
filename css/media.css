@@ -6,18 +6,23 @@
     height: 50px;
   }
   .rightbarLinks {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: self-start;
     gap: 5vmin;
     padding: 4% 8%;
     position: absolute;
-    top: 13vmin;
+    top: 50px;
     left: 0vmin;
     width: 100vw;
-    background-color: var(--textColor1);
+    /* background-color: var(--textColor1); */
+    background-color: #464646;
   }
+  /* .rightbarLinks a:hover {
+    background-color: #464646;
+  } */
   /* .moreIcons {
     position: absolute;
     right: 50vmin;
@@ -36,7 +41,12 @@
   }
   /* -----------------------hero section start------------------------ */
   .links {
-    display: none;
+    gap: 0px;
+    position: fixed;
+    left: 93vmin;
+    top: 80vmin;
+    background-color: #464646;
+    border-radius: 5px;
   }
   .leftPart1 {
     display: flex;

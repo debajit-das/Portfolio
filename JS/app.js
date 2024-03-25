@@ -56,13 +56,13 @@ theme.addEventListener("click", () => {
 // -----------------------------------------nevigation menu--------------------------------------
 let bar = document.querySelector("#bar");
 let rightbarLinks = document.querySelector(".rightbarLinks");
-let currDisplay = "block";
+let currDisplay = "none";
 bar.addEventListener("click", () => {
-  if (rightbarLinks.style.display === "flex") {
-    rightbarLinks.style.display = "none";
-    currDisplay = "none";
-  } else {
+  if (rightbarLinks.style.display === "none") {
     rightbarLinks.style.display = "flex";
     currDisplay = "flex";
+  } else {
+    rightbarLinks.style.display = "none";
+    currDisplay = "none";
   }
 });
