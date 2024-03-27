@@ -314,11 +314,25 @@ main {
   margin-top: 10vmin;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   gap: 100px;
 }
 .design {
   height: 40vmin;
   width: 35vmin;
   background-color: var(--bodyColor);
+  box-shadow: 0px 0px 10px gray;
+  /* transition: 0.2s ease-in; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 20px;
+  padding: 35px;
+  font-size: 1.25rem;
 }
+/* .design:hover {
+  transform: scale(1.03);
+} */
+/* .design-icon {
+  font-size: 2rem;
+} */
