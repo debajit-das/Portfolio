@@ -109,4 +109,28 @@
     width: 45%;
     height: 15vmin;
   }
+
+  /* ------------------------------SKILL SECTION END---------------------------- */
+
+  /* ------------------------------SERVICE SECTION START------------------------ */
+  .design {
+    height: 45vmin;
+    width: 40vmin;
+    gap: 10px;
+  }
+  /* -----------------------------SERVICE SECTION END---------------------------- */
+
+  /* -----------------------------CONTACT SECTION START------------------------- */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* .contact-btn {
+    align-items: start;
+  } */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
