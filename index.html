@@ -19,7 +19,7 @@
     <!--------------------------------- HEADER SATRT ---------------------------------->
     <header>
       <div class="navbar">
-        <div class="leftbar"><p id="name">Debajit.</p></div>
+        <div class="leftbar"><p id="name"><span id="initial">D</span>ebajit.</p></div>
         <div class="rightbar">
           <div class="rightbarLinks">
             <a href="#home">Home</a>
@@ -29,20 +29,16 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact Me</a>
           </div>
+            <div id="bar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <div class="moreIcons">
-          <div class="mode">
-            <i class="fa-solid fa-moon" id="theme"></i>
-          </div>
-          <div id="bar">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
+        
       </div>
     </header>
     <!--------------------------- HEADER ENDS---------------------------------- -->
     <main>
-      <!-- ----------------------HERO SECITION START -------------------------- -->
+      <!-- ----------------------HOME SECITION START -------------------------- -->
 
       <section class="section1" id="home">
         <div class="heroSection">
@@ -59,9 +55,11 @@
                 High level experience in web design and development knowledge,
                 producing quality work.
               </p>
-              <button class="contact">
-                Contact Me <i class="fa-regular fa-paper-plane"></i>
-              </button>
+              <a href="#contact">
+                <button class="contact">
+                  Contact Me <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </a>
             </div>
             <div class="rightPart1">
               <img src="asset/image/profileImage-1.png" alt="" />
@@ -79,7 +77,7 @@
         </div>
       </section>
 
-      <!-- ---------------------hero section end------------------------- -->
+      <!-- ---------------------home section end------------------------- -->
 
       <!------------------------about section start---------------------  -->
       <section class="section2" id="about">
@@ -96,15 +94,15 @@
             </p>
             <div class="status">
               <div class="status1">
-                <p><h1>08+</h1>Years
+                <p><h2>08+</h2>Years
                   experience</p>
               </div>
               <div class="status2">
-                <p><h1>20+</h1>Completed
+                <p><h2>20+</h2>Completed
                   project</p>
               </div>
               <div class="status3">
-                <p><h1>05+</h1>Companies
+                <p><h2>05+</h2>Companies
                   worked</p>
               </div>
             </div>
@@ -122,7 +120,7 @@
       <!-- ---------------------Skill section start----------------------- -->
       <section class="skillSection" id="skills">
         <h1>Skills</h1>
-        <br><p>Technical Skills</p>
+        <br><p>Technical Skills</p><br>
         <div class="skillLogo">
           <div class="logo">
             <img src="asset/skill-img/html5.svg" alt="">
@@ -200,24 +198,25 @@
         <p>What I offer</p>
         <div class="service-box">
           <div class="design">
-            <i class="fa-solid fa-table-cells-large"></i>
-            <p>Ui/Ux Designer</p>
-            <a href="#">View More <i class="fa-solid fa-arrow-right"></i></a>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Ui/Ux Designer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis placeat doloremque cupiditate, quam ad?</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="design">
-            <div class="design-icon">
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-            <p>Frontend Developer</p>
-            <a href="#">View More <i class="fa-solid fa-arrow-right"></i></a>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis placeat doloremque cupiditate, quam ad?</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="design">
-            <i class="fa-solid fa-pencil"></i>
-            <p>Branding Designer</p>
-            <a href="#">View More <i class="fa-solid fa-arrow-right"></i></a>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis placeat doloremque cupiditate, quam ad?</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
+        <button>See All</button>
       </section>
       <!-- --------------------------------SERVICE SECTION END------------------------------- -->
 
@@ -231,44 +230,41 @@
           <div class="contact-details">
             <div class="contact-details-call">
               <i class="fa-solid fa-phone"></i>
-              <h3>Call Me</h3>
               <p>9876543210</p>
             </div>
             <div class="contact-details-email">
               <i class="fa-solid fa-envelope"></i>
-              <h3>Email</h3>
               <p>debajitdas1201@gmail.com</p>
             </div>
             <div class="contact-details-location">
               <i class="fa-solid fa-location-dot"></i>
-              <h3>Location</h3>
               <p>Malda, West Bengal, 732142</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/debajit-das-537763219/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/debajit-das" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/Debajit018" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://twitter.com/Debajit018" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Debajit018" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div class="contact-form">
-            <form action=""><div class="contact-form-name">
-              <label for="name">Name</label>
-              <input type="text" class="form-width-half">
-            </div>
-            <div class="contact-form-email">
-              <label for="email">Email</label>
-              <input type="email" class="form-width-half">
-            </div>
-            <div class="contact-form-project">
-              <label for="project">Project</label>
-              <input type="text" class="form-width-full">
-            </div>
-            <div class="contact-form-message">
-              <label for="message">Message</label>
-              <input type="text" class="form-width-height-full">
-            </div>
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" class="form-width-half" required>
+              <input type="email" name="email" placeholder="Your Email" class="form-width-half" required>
+              <textarea name="message" rows="6" placeholder="Your Message" class="form-width-height-full"> </textarea>
             </form>
-            <button class="contact-btn">Submit</button>
+            <button type="submit" class="contact-btn">Submit</button>
           </div>
         </div>
       </section>
       <!-- --------------------------------------------CONTACT SECTION END-------------------------------------- -->
     </main>
+    <footer>
+      <p>
+        &copy; 2024 DEBAJIT. All Rights Reserved. Website design & made by Debajit Das.
+      </p>
+    </footer>
     <script src="JS/app.js"></script>
   </body>
 </html>
