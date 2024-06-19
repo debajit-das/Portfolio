@@ -1,9 +1,10 @@
 @media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
   /* --------------navbar start----------------------- */
   .navbar {
-    padding: 3% 8%;
-    width: 100%;
-    height: 50px;
+    padding: 2% 10%;
   }
   .rightbarLinks {
     display: none;
@@ -16,36 +17,15 @@
     top: 50px;
     left: 0vmin;
     width: 100vw;
-    /* background-color: var(--textColor1); */
     background-color: #464646;
-  }
-  /* .rightbarLinks a:hover {
-    background-color: #464646;
-  } */
-  /* .moreIcons {
-    position: absolute;
-    right: 50vmin;
-  } */
-  .darkIcon {
-    display: none;
   }
   #bar {
     display: block;
   }
-
   /* -----------------------navbar end----------------------------- */
-
-  main {
-    padding: 0% 12%;
-  }
-  /* -----------------------hero section start------------------------ */
+  /* -----------------------home section start------------------------ */
   .links {
-    gap: 0px;
-    position: fixed;
-    left: 93vmin;
-    top: 80vmin;
-    background-color: #464646;
-    border-radius: 5px;
+    display: none;
   }
   .leftPart1 {
     display: flex;
@@ -54,24 +34,14 @@
     justify-content: center;
     align-items: center;
   }
-  .leftPart1About button {
-    width: 100%;
-  }
   .section1 {
-    padding-top: 8vmin;
+    padding-top: 20vmin;
   }
   .scrollBar button {
-    top: 12vmin;
-    left: 24vmin;
+    position: static;
   }
-
   /* ----------------------------hero section end----------------------------- */
-
   /* ------------------------about section start------------------------------- */
-
-  .section2 {
-    height: 85vh;
-  }
   .aboutMe {
     margin-top: 8vmin;
     display: flex;
@@ -85,16 +55,17 @@
     flex-direction: column;
     gap: 50px;
   }
-  .cvBtn {
-    width: 100%;
+  .aboutMeImg img {
+    height: 60vw;
+    width: 60vw;
+    border-radius: 10px;
   }
   /* -------------------------about section end-------------------------- */
-
   /* --------------------------skill section start------------------------ */
   .skillSection {
-    margin-top: 10vmin;
+    margin-top: 8vmin;
     padding-top: 15vmin;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
   }
   .skillLogo {
@@ -102,35 +73,56 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .skillLogo div {
     gap: 10px;
     width: 45%;
     height: 15vmin;
   }
-
   /* ------------------------------SKILL SECTION END---------------------------- */
-
   /* ------------------------------SERVICE SECTION START------------------------ */
+  .serviceSection {
+    margin-top: 8vmin;
+  }
+  .service-box {
+    flex-wrap: wrap;
+  }
   .design {
-    height: 45vmin;
-    width: 40vmin;
-    gap: 10px;
+    height: 80vmin;
+    width: 100%;
+    gap: 20px;
+    padding: 35px;
   }
   /* -----------------------------SERVICE SECTION END---------------------------- */
-
   /* -----------------------------CONTACT SECTION START------------------------- */
   form {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  /* .contact-btn {
-    align-items: start;
-  } */
+  .contact-flex {
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 20vw;
+  }
   .contact-form {
     display: flex;
     flex-direction: column;
+  }
+  .contact-details {
+    align-items: center;
+    gap: 7vmin;
+  }
+  /* ---------------------------CONTACT SECTION END----------------------------- */
+  /* -----------------------------FOOTER START------------------------- */
+  footer {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    width: 100%;
+    padding: 2em 1em;
+    text-align: center;
   }
 }

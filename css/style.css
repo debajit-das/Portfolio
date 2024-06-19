@@ -4,104 +4,98 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  /* background-color: var(--bodyColor); */
-  /* border: 1px solid black; */
 }
 body {
-  /* background-color: var(--bodyColor); */
-  background-color: #e7e7e7;
-}
-.dark {
+  background: #080808;
   color: white;
-  /* background-color: black; */
-  background-color: #161616;
-}
-.light {
-  color: var(--titleColor);
-  /* background-color: white; */
-  background-color: #e7e7e7;
 }
 html {
   scroll-behavior: smooth;
 }
-:root {
-  /* --purple1: #b47eb3;
-  --purple2: #9e43cb; */
-  --bodyColor: #fdfbfe;
-  --textColor1: #6d6f70;
-  --textColor2: #a89fad;
-  --titleColor: #272329;
-  --linkColor1: #e45454;
-  --linkColor2: #f04848;
-  /* Dark Mode */
-  /* --bodyColor: #f0f0f0;
-  --textColor1: #001f3f;
-  --titleColor: #001f3f;
-  --textColor2: #333333;
-  --linkColor1: #ffff00;
-  --linkColor2: #d45050; */
+i {
+  color: #ff004f;
 }
 a {
   text-decoration: none;
+  color: #ff004f;
 }
 p {
   color: var(--textColor1);
 }
-/* h1 {
-  color: var(--titleColor);
-} */
+h1 {
+  font-size: 2.5rem;
+}
+button {
+  background: transparent;
+  height: 50px;
+  width: 140px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  border: 1px solid #ff004f;
+  transition: 0.5s;
+}
+button:hover {
+  background: #ff004f;
+  cursor: pointer;
+}
 /* -------------------Universal CSS end---------------------- */
 
 /* -------------------------- Navbar Starts -------------------------*/
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: var(--bodyColor);
+  width: 100%;
+  background: #080808;
   z-index: 100;
   box-shadow: 0px -1px 8px gray;
 }
 .navbar {
-  /* width: 100vw; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5% 14%;
 }
-.leftbar {
-  font-size: 24px;
+#name {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
 }
-/* .rightbar {
-  display: flex;
-  gap: 45px;
-  justify-content: center;
-  align-items: center;
-} */
+#initial {
+  color: #ff004f;
+}
 .rightbarLinks a {
   text-decoration: none;
-  color: var(--linkColor1);
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+}
+.rightbarLinks a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
   transition: 0.2s;
 }
-.rightbarLinks a:hover {
-  color: var(--linkColor2);
+.rightbarLinks a:hover::after {
+  width: 100%;
 }
 .rightbarLinks {
   display: flex;
-  gap: 45px;
+  gap: 30px;
   align-items: center;
 }
 .moreIcons {
   display: flex;
   gap: 30px;
 }
-.mode {
-  color: var(--linkColor2);
-}
-.mode:hover {
-  cursor: pointer;
-}
 #bar {
-  color: var(--linkColor2);
+  color: #ff004f;
   display: none;
 }
 /* ----------------------Navbar ends------------------ */
@@ -110,10 +104,9 @@ header {
 main {
   padding: 0% 14%;
 }
-/* ------------------------hero section start ----------------------- */
+/* ------------------------home section start ----------------------- */
 .section1 {
-  height: 75vh;
-  padding-top: 15vmin;
+  padding-top: 25vmin;
 }
 .heroSection {
   display: flex;
@@ -126,9 +119,6 @@ main {
   gap: 188px;
 }
 .links a {
-  color: var(--linkColor2);
-}
-.links a {
   transition: 0.5s ease-in;
   height: 25px;
   width: 25px;
@@ -138,9 +128,6 @@ main {
 }
 .links a:hover {
   transform: scale(1.4);
-  color: white;
-  border-radius: 50%;
-  background-color: var(--linkColor2);
 }
 .links {
   display: flex;
@@ -156,6 +143,7 @@ main {
   gap: 15px;
 }
 .name {
+  color: white;
   font-size: 3rem;
   line-height: 1.4;
 }
@@ -165,21 +153,11 @@ main {
 .rightPart1 img {
   height: 280px;
   width: 280px;
-  background-color: var(--linkColor1);
+  background: #ff004f;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-.leftPart1About button {
-  color: var(--bodyColor);
-  background-color: var(--linkColor2);
-  border: none;
-  height: 50px;
-  width: 140px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.leftPart1About button:hover {
-  background-color: var(--linkColor1);
-  cursor: pointer;
+.contact i {
+  color: white;
 }
 .scrollBar button {
   border: none;
@@ -190,39 +168,35 @@ main {
   position: relative;
   top: 10vmin;
   left: 34vmin;
-  color: var(--linkColor2);
+  color: white;
   background-color: transparent;
   transition: 0.2s ease-in;
 }
 .scrollBar button:hover {
   transform: translateY(0.25rem);
-  color: var(--linkColor2);
+  color: #ff004f;
   background-color: transparent;
 }
-/* .scrollDown {
-  color: black;
-} */
 
-/* -----------------------hero section end------------------------------- */
+/* -----------------------home section end------------------------------- */
 
 /* ------------------------about section start------------------------------- */
 .section2 {
   margin-top: 10vmin;
   padding-top: 15vmin;
   text-align: center;
-  height: 75vh;
 }
 .aboutMe {
   margin-top: 10vmin;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 150px;
+  gap: 15vmin;
   padding: 0px 9%;
 }
 .aboutMeImg img {
-  height: 50vmin;
-  width: 50vmin;
+  height: 25vw;
+  width: 25vw;
   border-radius: 10px;
 }
 .aboutMeText {
@@ -237,18 +211,8 @@ main {
   display: flex;
   justify-content: center;
 }
-.cvBtn {
-  color: var(--bodyColor);
-  background-color: var(--linkColor2);
-  border: none;
-  height: 50px;
-  width: 140px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.cvBtn:hover {
-  background-color: var(--linkColor1);
-  cursor: pointer;
+.cvBtn i {
+  color: white;
 }
 /* -----------------------about section end-------------------------- */
 
@@ -256,7 +220,6 @@ main {
 .skillSection {
   margin-top: 10vmin;
   padding-top: 15vmin;
-  height: 75vh;
   text-align: center;
 }
 .skillLogo {
@@ -278,66 +241,71 @@ main {
   width: 23%;
   height: 10vmin;
   border-radius: 5px;
-  /* background-color: var(--textColor2); */
   background-color: #f5f5f5;
-
+  color: #262626;
+  font-weight: bolder;
   transition: 0.3s ease-in;
   box-shadow: 0px 1px 2px gray;
 }
-.lightLogo {
-  background-color: #f5f5f5;
-  color: var(--titleColor);
-}
-.darkLogo {
-  background-color: #6d6f70;
-  color: #e7e7e7;
-}
-.skillLogo div p {
-  /* color: var(--bodyColor); */
-  color: var(--titleColor);
-  font-weight: bolder;
-}
-.skillLogo div:hover {
+.logo:hover {
   transform: scale(1.05);
+  background: #ff004f;
+  color: white;
   box-shadow: 0px 1px 8px black;
 }
 /*---------------------------- skill section end--------------------------------------- */
 
 /*--------------------------- SERVICE SECTION START -------------------------------*/
 .serviceSection {
-  margin-top: 10vmin;
   padding-top: 15vmin;
-  height: 100vh;
   text-align: center;
 }
 .service-box {
   margin-top: 10vmin;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 15vmin;
+  gap: 5vmin;
 }
 .design {
-  height: 40vmin;
-  width: 35vmin;
-  background-color: var(--bodyColor);
-  box-shadow: 0px 0px 10px gray;
-  /* transition: 0.2s ease-in; */
+  height: 24vw;
+  width: 22vw;
+  background: #262626;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: end;
-  align-items: start;
   gap: 20px;
-  padding: 35px;
-  font-size: 1.25rem;
+  align-items: start;
+  padding: 2vw;
+  font-size: 1.15rem;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
 }
-/* .design:hover {
-  transform: scale(1.03);
-} */
-/* .design-icon {
+.design i {
   font-size: 2rem;
-} */
+}
+.design p {
+  color: white;
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.design h2 {
+  font-size: 1.4rem;
+}
+.design a {
+  font-size: 1rem;
+}
+.design a i {
+  font-size: 1rem;
+}
+.design:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+.design:hover a,
+.design:hover i {
+  color: white;
+}
 
 /* -----------------------------SERVICE SECTION END---------------------------- */
 
@@ -346,42 +314,67 @@ main {
 .contactSection {
   margin-top: 10vmin;
   padding-top: 15vmin;
-  height: 100vh;
   text-align: center;
 }
-.contact-flex {
-  display: flex;
-  justify-content: space-around;
-  /* gap: 150px; */
-}
-/* .contact-form {
+.contact-details {
   display: flex;
   flex-direction: column;
-} */
+  gap: 2vw;
+}
+.contact-details div {
+  display: flex;
+  gap: 5vmin;
+}
+.contact-flex {
+  margin-top: 15vmin;
+  display: flex;
+  justify-content: space-around;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons i {
+  font-size: 24px;
+  color: #ababab;
+  transition: 0.5s;
+}
+.social-icons i:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
 form {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 20px;
   width: 460px;
 }
-/* .form-width-half {
-  width: 45%;
-  height: 40px;
-}
-.form-width-full {
-  width: 100%;
-  height: 50px;
-}
-.form-width-height-full {
-  width: 100%;
-  height: 70px;
-} */
-
 input {
   outline: none;
-  /* height: 100px; */
-  background-color: var(--bodyColor);
-  /* background-color: #e7e7e7; */
   border: none;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea {
+  background: #262626;
+  color: #fff;
+  padding: 20px 10px;
+  outline: none;
+  border-radius: 6px;
+}
+/* -----------------------------CONTACT SECTION END------------------------- */
+/* -----------------------------FOOTER START------------------------- */
+footer {
+  margin-top: 20px;
+  border-top: 1px solid gray;
+  width: 100%;
+  padding: 2em 20em;
+  text-align: center;
 }
