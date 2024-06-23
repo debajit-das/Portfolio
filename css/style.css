@@ -241,11 +241,10 @@ main {
   width: 23%;
   height: 10vmin;
   border-radius: 5px;
-  background-color: #f5f5f5;
-  color: #262626;
+  background: #262626;
+  color: white;
   font-weight: bolder;
   transition: 0.3s ease-in;
-  box-shadow: 0px 1px 2px gray;
 }
 .logo:hover {
   transform: scale(1.05);

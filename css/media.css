@@ -8,16 +8,24 @@
   }
   .rightbarLinks {
     display: none;
+    /* display: flex; */
     flex-direction: column;
-    justify-content: flex-start;
     align-items: self-start;
     gap: 5vmin;
     padding: 4% 8%;
     position: absolute;
-    top: 50px;
+    top: 54px;
     left: 0vmin;
     width: 100vw;
     background-color: #464646;
+  }
+  .rightbarLinks a:after {
+    display: none;
+  }
+  .rightbarLinks a:hover {
+    width: 80vw;
+    padding: 10px;
+    background: #262626;
   }
   #bar {
     display: block;
