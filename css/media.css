@@ -11,7 +11,7 @@
     /* display: flex; */
     flex-direction: column;
     align-items: self-start;
-    gap: 5vmin;
+    gap: 0vmin;
     padding: 4% 8%;
     position: absolute;
     top: 54px;
@@ -22,13 +22,32 @@
   .rightbarLinks a:after {
     display: none;
   }
-  .rightbarLinks a:hover {
-    width: 80vw;
+  .rightbar-links {
     padding: 10px;
+    width: 100%;
+  }
+  .rightbar-links:hover {
+    width: 80vw;
     background: #262626;
   }
   #bar {
     display: block;
+  }
+  .navbar-social-icons {
+    margin-top: 3vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .navbar-social-icons a {
+    transition: 0.5s;
+  }
+  .navbar-social-icons a:hover {
+    background: #464646;
+    padding: 0;
+    color: #ff004f;
+    transform: translateY(-5px);
   }
   /* -----------------------navbar end----------------------------- */
   /* -----------------------home section start------------------------ */
@@ -97,7 +116,7 @@
     flex-wrap: wrap;
   }
   .design {
-    height: 80vmin;
+    height: 90vmin;
     width: 100%;
     gap: 20px;
     padding: 35px;

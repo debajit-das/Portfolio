@@ -98,6 +98,9 @@ header {
   color: #ff004f;
   display: none;
 }
+.navbar-social-icons {
+  display: none;
+}
 /* ----------------------Navbar ends------------------ */
 
 /*----------------------- Main section start----------------------------- */
