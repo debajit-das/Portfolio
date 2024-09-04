@@ -122,6 +122,20 @@
     padding: 35px;
   }
   /* -----------------------------SERVICE SECTION END---------------------------- */
+  /* ---------------------------PORTFOLIO SECTION SATRT ------------------- */
+  .project-box {
+    flex-wrap: wrap;
+  }
+  .design-project {
+    height: 90vmin;
+    width: 100%;
+    gap: 20px;
+    padding: 35px;
+  }
+  .design-project img {
+    width: 55vw;
+  }
+  /* __________________________PORTFOLIO SECTION END----------------------- */
   /* -----------------------------CONTACT SECTION START------------------------- */
   form {
     display: flex;

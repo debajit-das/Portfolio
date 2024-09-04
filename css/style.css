@@ -213,6 +213,7 @@ main {
 .status {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 .cvBtn i {
   color: white;
@@ -310,6 +311,47 @@ main {
 }
 
 /* -----------------------------SERVICE SECTION END---------------------------- */
+
+/* -----------------------------PORTFOLIO SECTION STARRT------------------------ */
+
+.portfolioSection {
+  padding-top: 15vmin;
+  text-align: center;
+}
+.project-box {
+  margin-top: 10vmin;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 5vmin;
+}
+.design-project {
+  height: 24vw;
+  width: 22vw;
+  background: #262626;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  padding: 2vw;
+  font-size: 1.15rem;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.design-project:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+.design-project img {
+  height: 24vw;
+  width: 18vw;
+  object-fit: contain;
+}
+.project-link i {
+  text-align: center;
+}
+
+/* ------------------------------PORTFOLIO SECTION END-------------------------- */
 
 /* -----------------------------CONTACT SECTION START------------------------- */
 
