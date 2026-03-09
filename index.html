@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ======================================================================
+       Debajit Das — Personal Portfolio
+       index.html — Main Document
+
+       Layout:  Two-panel (fixed sidebar + scrollable main content)
+       Theme:   Dark / Amber accent — inspired by Arter CV theme
+       Author:  Debajit Das
+       ====================================================================== -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Debajit Das — Fullstack Developer & UI/UX Designer from Malda, West Bengal."
+    />
+    <meta name="author" content="Debajit Das" />
+
+    <title>Debajit Das — Portfolio</title>
+
+    <!-- Favicon (inline SVG data URI) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230d0d0d'/><text x='5' y='24' font-size='20' fill='%23f0a500' font-family='monospace' font-weight='bold'>D</text></svg>"
+    />
+
+    <!-- Google Fonts — loaded via CSS @import  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    />
+
+    <!-- Font Awesome (icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ====================================================================
+       Mobile: Hamburger Toggle Button
+       ==================================================================== -->
+    <button
+      id="mobileToggle"
+      class="mobile-toggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="sidebar"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Overlay backdrop (mobile only) -->
+    <div
+      id="sidebarOverlay"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 140;
+        transition: opacity 0.3s;
+      "
+    ></div>
+
+    <!-- ====================================================================
+       Main Layout
+       ==================================================================== -->
+    <div class="layout">
+      <!-- ==================================================================
+         SIDEBAR
+         ================================================================== -->
+      <aside
+        id="sidebar"
+        class="sidebar"
+        role="complementary"
+        aria-label="Profile and navigation"
+      >
+        <!-- Avatar -->
+        <div class="sidebar__avatar-wrap">
+          <img
+            src="assets/image/image1.png"
+            alt="Debajit Das avatar"
+            class="sidebar__avatar"
+            width="110"
+            height="110"
+          />
+        </div>
+
+        <!-- Name & Title -->
+        <div class="sidebar__identity">
+          <h1 class="sidebar__name">Debajit Das</h1>
+          <p class="sidebar__title">Fullstack Developer &amp; UI/UX Designer</p>
+        </div>
+
+        <div class="sidebar__divider"></div>
+
+        <!-- Personal Details -->
+        <div class="sidebar__details" aria-label="Personal details">
+          <div class="sidebar__detail-row">
+            <span class="sidebar__detail-label">Residence</span>
+            <span class="sidebar__detail-value">India</span>
+          </div>
+          <div class="sidebar__detail-row">
+            <span class="sidebar__detail-label">City</span>
+            <span class="sidebar__detail-value">Malda, WB</span>
+          </div>
+          <div class="sidebar__detail-row">
+            <span class="sidebar__detail-label">Email</span>
+            <span class="sidebar__detail-value" style="font-size: 0.68rem"
+              >debajitdas1201@gmail.com</span
+            >
+          </div>
+          <div class="sidebar__detail-row">
+            <span class="sidebar__detail-label">Phone</span>
+            <span class="sidebar__detail-value">+91 83483 59622</span>
+          </div>
+        </div>
+
+        <div class="sidebar__divider"></div>
+
+        <!-- Skill Bars — Core Technologies -->
+        <div>
+          <p class="sidebar__section-label">Core Skills</p>
+          <div class="skill-bar-list">
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span>HTML / CSS</span><span>92%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span>JavaScript</span><span>80%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span>Python</span><span>75%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span>MySQL</span><span>70%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span>Tailwind CSS</span><span>78%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar__divider"></div>
+
+        <!-- Tech Tags -->
+        <div>
+          <p class="sidebar__section-label">Technologies</p>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Tailwind</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="sidebar__divider"></div>
+
+        <!-- Download CV -->
+        <a
+          href="assets/document/Resume.pdf"
+          class="btn-cv"
+          download
+          aria-label="Download Debajit's CV"
+        >
+          <i class="fa fa-download" aria-hidden="true"></i>&nbsp; Download CV
+        </a>
+
+        <div class="sidebar__divider"></div>
+
+        <!-- Navigation -->
+        <nav class="sidebar__nav" aria-label="Page sections">
+          <ul>
+            <li>
+              <a href="#home" class="active">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-house" aria-hidden="true"></i
+                ></span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-user" aria-hidden="true"></i
+                ></span>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-code" aria-hidden="true"></i
+                ></span>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-briefcase" aria-hidden="true"></i
+                ></span>
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-layer-group" aria-hidden="true"></i
+                ></span>
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span class="nav-icon"
+                  ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                ></span>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- END SIDEBAR -->
+
+      <!-- ==================================================================
+         MAIN CONTENT
+         ================================================================== -->
+      <main class="main" id="mainContent">
+        <!-- ================================================================
+           SECTION 1 — HERO
+           ================================================================ -->
+        <section id="home" class="section" aria-label="Introduction">
+          <p class="hero__tag">
+            <i class="fa-solid fa-terminal" aria-hidden="true"></i>&nbsp;
+            Available for Freelance
+          </p>
+
+          <h2 class="hero__heading">
+            Hi, I'm<br />
+            <span>Debajit.</span>
+          </h2>
+
+          <p class="hero__role">
+            <span class="code-tag">&lt;code&gt;</span>
+            &nbsp;<span id="typewriter"></span
+            ><span class="cursor" aria-hidden="true"></span>&nbsp;
+            <span class="code-tag">&lt;/code&gt;</span>
+          </p>
+
+          <p class="hero__subtitle">
+            Motivated Computer Applications student with a strong foundation in
+            fullstack web development. Passionate about clean code, responsive
+            design, and elegant user experiences.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#portfolio" class="btn-primary">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i>
+              View Work
+            </a>
+            <a href="#contact" class="btn-outline">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Stats counters -->
+          <div class="hero__stats" aria-label="Career statistics">
+            <div>
+              <div class="hero__stat-value">
+                <span data-count="3" data-suffix="+">0+</span>
+              </div>
+              <div class="hero__stat-label">Years Experience</div>
+            </div>
+
+            <div>
+              <div class="hero__stat-value">
+                <span data-count="10" data-suffix="+">0+</span>
+              </div>
+              <div class="hero__stat-label">Completed Projects</div>
+            </div>
+
+            <div>
+              <div class="hero__stat-value">
+                <span data-count="100" data-suffix="%">0%</span>
+              </div>
+              <div class="hero__stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </section>
+        <!-- END HERO -->
+
+        <!-- ================================================================
+           SECTION 2 — ABOUT
+           ================================================================ -->
+        <section id="about" class="section" aria-label="About me">
+          <p class="section__eyebrow reveal">My Introduction</p>
+          <h2 class="section__title reveal reveal-delay-1">About Me</h2>
+
+          <div class="about__single">
+            <!-- Bio text -->
+            <div>
+              <p class="about__bio reveal reveal-delay-2">
+                I'm a motivated and enthusiastic Computer Applications student
+                with a strong foundation in web development and programming.
+                Experienced in building responsive, user-friendly web
+                applications and continuously learning modern technologies.
+              </p>
+              <p class="about__bio reveal reveal-delay-2">
+                A quick learner with solid problem-solving skills and a passion
+                for writing clean, maintainable code. I enjoy turning complex
+                problems into simple, beautiful, and intuitive experiences.
+              </p>
+
+              <!-- Mini stats -->
+              <div class="about__mini-stats reveal reveal-delay-3">
+                <div class="about__mini-stat">
+                  <div class="about__mini-stat-value">03+</div>
+                  <div class="about__mini-stat-label">Years Experience</div>
+                </div>
+                <div class="about__mini-stat">
+                  <div class="about__mini-stat-value">5+</div>
+                  <div class="about__mini-stat-label">Completed Projects</div>
+                </div>
+              </div>
+
+              <a
+                href="assets/document/Resume.pdf"
+                class="btn-primary reveal reveal-delay-4"
+                download
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- END ABOUT -->
+
+        <!-- ================================================================
+           SECTION 3 — SKILLS
+           ================================================================ -->
+        <section id="skills" class="section" aria-label="Technical skills">
+          <p class="section__eyebrow reveal">What I Know</p>
+          <h2 class="section__title reveal reveal-delay-1">Technical Skills</h2>
+
+          <div class="skills__grid">
+            <!-- Animated skill bars -->
+            <div>
+              <p class="skills__group-label reveal">Proficiency Levels</p>
+              <div class="skills__bars reveal reveal-delay-1">
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>HTML &amp; CSS</span><span>92%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="92%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>Tailwind CSS</span><span>78%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="78%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>Python</span><span>75%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="75%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>MySQL</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="70%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-bar__header">
+                    <span>C / C++</span><span>65%</span>
+                  </div>
+                  <div class="skill-bar__track">
+                    <div class="skill-bar__fill" data-width="65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill tag groups -->
+            <div class="skills__tags-group">
+              <div class="reveal reveal-delay-2">
+                <p class="skills__group-label">Frontend</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">JavaScript (ES6+)</span>
+                  <span class="skill-tag">Tailwind CSS</span>
+                  <span class="skill-tag">Responsive Design</span>
+                </div>
+              </div>
+
+              <div class="reveal reveal-delay-2">
+                <p class="skills__group-label">Backend &amp; Languages</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">C</span>
+                  <span class="skill-tag">C++</span>
+                </div>
+              </div>
+
+              <div class="reveal reveal-delay-3">
+                <p class="skills__group-label">Tools &amp; Workflow</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git &amp; GitHub</span>
+                  <span class="skill-tag">VS Code</span>
+                  <span class="skill-tag">Chrome DevTools</span>
+                  <span class="skill-tag">Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END SKILLS -->
+
+        <!-- ================================================================
+           SECTION 4 — SERVICES
+           ================================================================ -->
+        <section id="services" class="section" aria-label="Services I offer">
+          <p class="section__eyebrow reveal">What I Offer</p>
+          <h2 class="section__title reveal reveal-delay-1">Services</h2>
+
+          <div class="services__grid">
+            <!-- Service Card: UI/UX Design -->
+            <article class="service-card reveal reveal-delay-1">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <h3 class="service-card__title">UI / UX Design</h3>
+              <p class="service-card__desc">
+                Expert UI/UX design creating user-friendly, visually appealing
+                interfaces. I focus on intuitive flows, accessibility, and
+                achieving your business goals effectively.
+              </p>
+            </article>
+
+            <!-- Service Card: Web Development -->
+            <article class="service-card reveal reveal-delay-2">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="service-card__title">Web Development</h3>
+              <p class="service-card__desc">
+                Professional web development services building responsive,
+                user-friendly websites with modern design, seamless
+                functionality, and optimized performance across all devices.
+              </p>
+            </article>
+
+            <!-- Service Card: App Design -->
+            <article class="service-card reveal reveal-delay-3">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h3 class="service-card__title">App Design</h3>
+              <p class="service-card__desc">
+                Crafting intuitive, user-friendly mobile application interfaces
+                with seamless functionality and visually appealing designs
+                tailored for all major platforms.
+              </p>
+            </article>
+          </div>
+        </section>
+        <!-- END SERVICES -->
+
+        <!-- ================================================================
+           SECTION 5 — PORTFOLIO
+           ================================================================ -->
+        <section id="portfolio" class="section" aria-label="My projects">
+          <p class="section__eyebrow reveal">My Work</p>
+          <h2 class="section__title reveal reveal-delay-1">Portfolio</h2>
+
+          <div class="portfolio__grid">
+            <!-- Project 1: Chrome Extension -->
+            <article class="portfolio-card reveal reveal-delay-1">
+              <div class="portfolio-card__img-wrap">
+                <!--
+                Replace src with: asset/image/extensiom.jpg
+                when deploying with local assets.
+              -->
+                <img
+                  src="assets/image/extension.jpg"
+                  alt="Image Type Converter Chrome Extension"
+                  class="portfolio-card__img"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__overlay" aria-hidden="true">
+                  <a
+                    href="https://chromewebstore.google.com/detail/image-type-converter/loikfmlknpbhelmocllljmbkafpjjpdf"
+                    class="portfolio-card__overlay-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    View Project
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-card__body">
+                <h3 class="portfolio-card__title">Image Type Converter</h3>
+                <p class="portfolio-card__desc">
+                  A Chrome Extension that converts images between formats (JPG,
+                  PNG, GIF, BMP) directly in the browser. Published on the
+                  Chrome Web Store.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 2: Weather App -->
+            <article class="portfolio-card reveal reveal-delay-2">
+              <div class="portfolio-card__img-wrap">
+                <!--
+                Replace src with: asset/image/Weather.PNG
+                when deploying with local assets.
+              -->
+                <img
+                  src="assets/image/Weather.PNG"
+                  alt="Weather App"
+                  class="portfolio-card__img"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__overlay" aria-hidden="true">
+                  <a
+                    href="https://debajit-das.github.io/WEB-PROJECTS/Weather%20app/"
+                    class="portfolio-card__overlay-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    View Project
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-card__body">
+                <h3 class="portfolio-card__title">Weather App</h3>
+                <p class="portfolio-card__desc">
+                  A responsive web application that fetches and displays
+                  real-time weather data for any location worldwide using a live
+                  weather API.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project 3: Blog UI -->
+            <article class="portfolio-card reveal reveal-delay-3">
+              <div class="portfolio-card__img-wrap">
+                <!--
+                Replace src with: asset/image/blog.PNG
+                when deploying with local assets.
+              -->
+                <img
+                  src="assets/image/blog.PNG"
+                  alt="Blog UI Design"
+                  class="portfolio-card__img"
+                  loading="lazy"
+                />
+                <div class="portfolio-card__overlay" aria-hidden="true">
+                  <a
+                    href="https://debajit-das.github.io/WEB-PROJECTS/blog/"
+                    class="portfolio-card__overlay-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    View Project
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-card__body">
+                <h3 class="portfolio-card__title">Blog UI</h3>
+                <p class="portfolio-card__desc">
+                  A modern and fully responsive user interface for a blogging
+                  platform, built with clean HTML, CSS, and vanilla JavaScript.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- END PORTFOLIO -->
+
+        <!-- ================================================================
+           SECTION 6 — CONTACT
+           ================================================================ -->
+        <section id="contact" class="section" aria-label="Contact me">
+          <p class="section__eyebrow reveal">Get In Touch</p>
+          <h2 class="section__title reveal reveal-delay-1">Contact Me</h2>
+
+          <div class="contact__grid">
+            <!-- Contact info -->
+            <div class="contact__info">
+              <div class="contact__item reveal reveal-delay-1">
+                <div class="contact__item-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="contact__item-label">Phone</p>
+                  <a href="tel:+918348359622" class="contact__item-value"
+                    >+91 83483 59622</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact__item reveal reveal-delay-2">
+                <div class="contact__item-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="contact__item-label">Email</p>
+                  <a
+                    href="mailto:debajitdas1201@gmail.com"
+                    class="contact__item-value"
+                  >
+                    debajitdas1201@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact__item reveal reveal-delay-3">
+                <div class="contact__item-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="contact__item-label">Location</p>
+                  <p class="contact__item-value">
+                    Malda, West Bengal — 732142, India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact form -->
+            <form
+              id="contactForm"
+              class="contact__form reveal reveal-delay-2"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name"
+                    >Name
+                    <span aria-hidden="true" style="color: var(--color-accent)"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"
+                    >Email
+                    <span aria-hidden="true" style="color: var(--color-accent)"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project enquiry, collaboration, etc."
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message"
+                  >Message
+                  <span aria-hidden="true" style="color: var(--color-accent)"
+                    >*</span
+                  ></label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                style="align-self: flex-start"
+              >
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- END CONTACT -->
+
+        <!-- ================================================================
+           FOOTER
+           ================================================================ -->
+        <footer class="footer" role="contentinfo">
+          <p>&copy; 2024 Debajit Das. All Rights Reserved.</p>
+
+          <div class="footer__socials" aria-label="Social media links">
+            <a
+              href="https://github.com/debajit-das"
+              class="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="mailto:debajitdas1201@gmail.com"
+              class="footer__social-link"
+              aria-label="Send an email"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a
+              href="tel:+918348359622"
+              class="footer__social-link"
+              aria-label="Call Debajit"
+            >
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </a>
+          </div>
+        </footer>
+      </main>
+      <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END LAYOUT -->
+
+    <!-- ======================================================================
+       Scripts — deferred for performance
+       ====================================================================== -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Inline: show sidebar overlay only on mobile via JS (avoids FOUC) -->
+    <script>
+      (function () {
+        var overlay = document.getElementById("sidebarOverlay");
+        if (overlay && window.innerWidth <= 768) {
+          overlay.style.display = "block";
+          overlay.style.opacity = "0";
+          overlay.style.pointerEvents = "none";
+        }
+
+        // Show/hide overlay properly
+        var toggle = document.getElementById("mobileToggle");
+        if (toggle && overlay) {
+          toggle.addEventListener("click", function () {
+            var isOpen = document
+              .getElementById("sidebar")
+              .classList.contains("is-open");
+            overlay.style.opacity = isOpen ? "1" : "0";
+            overlay.style.pointerEvents = isOpen ? "auto" : "none";
+          });
+          overlay.addEventListener("click", function () {
+            overlay.style.opacity = "0";
+            overlay.style.pointerEvents = "none";
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
